@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mufaddal Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <!-- <img src="images/????" alt="">       Logo image source for future -->   
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Sagedoku</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A React application to solve sudoku puzzles</p>
+            
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>Check out the <a href="https://hack-weekly.github.io/sage-giraffe-sudoku/"><strong>Live Demo</strong></a></p>
+            <p>Check out the <a href="https://github.com/muffymn/sage-giraffe-sudoku"><strong>Github Repo</strong></a></p>
+            <p>Sagedoku is a React application that uses a backtracking algorithm to solve varying difficultly levels of sudoku puzzles</p>
+            <p>This was a Hackathon project made in collaboration with 8 other developers using Git</p>
+            <p>My responsibility in this project was handling the implementation of the countdown timer and building/styling the Sudoku board</p>
+            <p>Functionalities:
+                <ul>
+                    <li>Generate puzzle based on difficulty (easy, medium, and hard)</li>
+                    <li>Timer to solve each puzzle</li>
+                    <li>Option to show the solution for the puzzle</li>
+                    <li>Option to show errors even when the puzzle is not yet completed</li>
+                    <li>Dark and light mode</li>
+                    <li>Mobile-friendly</li>   
+                </ul>
+            </p>
+        </div>
+        
+
+        
+
+         
+         <!-- Footer -->
+         <footer class="footer">
+             <a href="mailto:m.naguthana@hotmail.com" class="footer__link">m.naguthana@hotmail.com</a>
+             <ul class="social-list">
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/muffymn"><i class="fab fa-github"></i></a>
+                </li>   <!-- change up href links -->
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/mufaddal-naguthanawala-900592261/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com"><i class="fa-solid fa-file"></i></a>
+                </li>
+                 
+             </ul>
+         </footer>
+
+         <script src="js/index.js"></script>
+
+    </body>
+</html>

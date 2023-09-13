@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mufaddal Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <!-- <img src="images/????" alt="">       Logo image source for future -->   
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>CS50 Finance</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A Flask application to manage a stock portfolio</p>
+            
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>Check out the <a href="https://github.com/muffymn/Finance"><strong>Github Repo</strong></a></p>
+            
+            <p>Finance is a web app that allows logged-in users to "buy" and "sell" stocks (with pretend money) as well as look up real stock quotes fetched from IEX API. Users can also view their stock portfolio transaction history.</p>
+            <p>Technologies:
+                <ul>
+                    <li>Python</li>
+                    <li>Flask with Session Authentication</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>Bootstrap</li>  
+                </ul>
+            </p>
+            
+            <p>Views:
+                <ul>
+                    <li>Register: Allow a new user to register for an account, rendering an apology view if the form data is incomplete or if the username already exists in the database.</li>
+                    <li>Index: The homepage displays a table of the logged-in user's owned stocks, number of shares, current stock price, value of each holding. This view also shows the user's imaginary "cash" balance and the total of their "cash" plus stock value.
+
+                    </li>
+                    <li>Quote: Allows the user to submit a form to look up a stock's current price, retrieving real-time data from the IEX API. An error message is rendered if the stock symbol is invalid.
+
+                    </li>
+                    <li>Buy: Allows the user to "buy" stocks by submitting a form with the stock's symbol and number of shares. Checks to ensure the stock symbol is valid and the user can afford the purchase at the stock's current market price with their available balance, and stores the transaction history in the database.
+
+                    </li>
+                    <li>Sell: Allows the user to "sell" shares of any stock currently owned in their portfolio.
+
+                    </li> 
+                    <li>History: Displays a table summarizing the user's past transactions (all buys and sells). Each row in the table lists whether the stock was bought or sold, the stock's symbol, the buy/sell price, the number of shares, and the transaction's date/time.
+
+                    </li> 
+                </ul>
+            </p>
+        </div>
+        
+
+        
+
+         
+         <!-- Footer -->
+         <footer class="footer">
+             <a href="mailto:m.naguthana@hotmail.com" class="footer__link">m.naguthana@hotmail.com</a>
+             <ul class="social-list">
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/muffymn"><i class="fab fa-github"></i></a>
+                </li>   <!-- change up href links -->
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/mufaddal-naguthanawala-900592261/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com"><i class="fa-solid fa-file"></i></a>
+                </li>
+                 
+             </ul>
+         </footer>
+
+         <script src="js/index.js"></script>
+
+    </body>
+</html>

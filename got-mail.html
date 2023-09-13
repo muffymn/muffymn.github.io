@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mufaddal Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <!-- <img src="images/????" alt="">       Logo image source for future -->   
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                <strong>Mail</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">A Django front-end client to manage an email inbox.</p>
+            
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>Check out the <a href="https://github.com/muffymn/got-mail"><strong>Github Repo</strong></a></p>
+            
+            <p>A JavaScript "email" client that allows logged-in users to view, get, and send messages to each other and mark messages archived/unarchived, moving them to a different mailbox view. These are messages stored in database and are not sent to real email servers. The application's Django framework and Python code were provided in the assignment starter code. The task for this assignment was to implement the front-end with JavaScript and HTML, using the application's API to get, put, and post data with fetch.</p>
+            <p>Technologies:
+                <ul>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>JavaScript</li>
+                    <li>REST API</li>
+                    <li>HTML</li>  
+                    <li>Bootstrap</li>
+                </ul>
+            </p>
+            
+            
+        </div>
+        
+
+        
+
+         
+         <!-- Footer -->
+         <footer class="footer">
+             <a href="mailto:m.naguthana@hotmail.com" class="footer__link">m.naguthana@hotmail.com</a>
+             <ul class="social-list">
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/muffymn"><i class="fab fa-github"></i></a>
+                </li>   <!-- change up href links -->
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/in/mufaddal-naguthanawala-900592261/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                 <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com"><i class="fa-solid fa-file"></i></a>
+                </li>
+                 
+             </ul>
+         </footer>
+
+         <script src="js/index.js"></script>
+
+    </body>
+</html>
